@@ -14,7 +14,7 @@ pipeline {
 
         stage ('Testing Stage') {
             steps {
-                dir(''Documents/springboot1/demoanil') { // Navigate to the directory with the pom.xml
+                dir('Documents/springboot1/demoanil') { // Navigate to the directory with the pom.xml
                     withMaven(maven : 'MAVEN_HOME') {
                         sh 'mvn test'
                     }
